@@ -1,0 +1,25 @@
+#N canvas 0 0 450 300 10;
+#X obj 210 190 metro 500;
+#X msg 210 138 1;
+#X obj 210 245 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 210 30 key;
+#X obj 449 43 key;
+#X obj 516 101 print;
+#X obj 210 68 sel 32 115 83;
+#X msg 260 138 0;
+#X obj 274 30 keyup;
+#X obj 570 43 keyup;
+#X text 553 -9 al soltarse envia la señal;
+#X text 49 67 32 => SPACE BAR;
+#X text 49 102 115 => s;
+#X text 49 137 83 => S;
+#X text 414 -9 al presionarse envia la señal;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 3 0 6 0;
+#X connect 4 0 5 0;
+#X connect 6 0 1 0;
+#X connect 6 1 7 0;
+#X connect 6 2 7 0;
+#X connect 7 0 0 0;

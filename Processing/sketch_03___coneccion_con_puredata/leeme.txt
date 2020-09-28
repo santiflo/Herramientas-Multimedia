@@ -1,0 +1,14 @@
+En el archivo de processing, hay una variable que se llama n_balls que indica la cantidad de bolas van a ser
+dibujadas, lo recomendable es que 1<=n_balls<=12. Ya que con 1 bola no genera un acorde y la cantidad maxima
+de notas implementadas son 12, que se encuentran en la escala de sol.
+No pude hacer que sonara como yo queria:
+ La idea es que cada bola fuera una nota musical y cuando aparece la lineas que las une, deberia tocar un acorde.
+ El problema es que processing envia muchos datos al mismo tiempo y puredata los recibe haciendo que toque una
+ misma nota muchas veces, en vez de hacerla sonar una vez durante el tiempo que exite la coneccion entre las
+ bolas.
+
+La solucion que se me ocurrio es tener un vector con todos los arcos posibles que puede generar con determinadas
+bolas {arcos = (n_balls/2)(n_balls-1)}, el cual indique cuando un nodo esta conectado con alguno de los demas nodos
+y ahi enviar el determinado mensaje para tocar el acorde.
+
+Debido al tiempo y la obligacion con otras tareas, no puedo aplicar la solucion planteada

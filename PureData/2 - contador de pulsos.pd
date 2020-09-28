@@ -1,0 +1,20 @@
+#N canvas 676 0 681 312 10;
+#X obj 243 81 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 243 122 counter;
+#X floatatom 243 195 5 0 0 0 - - -;
+#X obj 243 37 metro 500;
+#X msg 194 20 0;
+#X msg 243 -22 1;
+#X floatatom 294 -21 5 0 0 0 - - -;
+#X obj 272 81 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 179 82 pulso;
+#X text 295 77 reset;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 0 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 1;
+#X connect 7 0 1 3;

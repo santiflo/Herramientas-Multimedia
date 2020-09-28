@@ -1,0 +1,34 @@
+#N canvas -8 -8 1366 685 10;
+#X text 83 13 1 minuto => 60000 ms;
+#X text 83 -15 metro 500 => 500 ms ===> BPM 120;
+#X obj 430 88 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 430 129 60000;
+#X text 501 171 cantidad de BPM;
+#X text 503 224 cantidad de ms entre las pulsaciones;
+#X obj 532 73 hsl 128 15 40 250 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5500 1;
+#X floatatom 529 156 5 0 0 0 - - -;
+#X text 422 26 El BPM minimo de un metronomo es 40 y el maximo 250
+;
+#X text 525 47 40;
+#X text 650 50 250;
+#X obj 529 129 i;
+#X text 555 128 => toma un numero y lo vuelve entero;
+#X msg 333 197 0;
+#X obj 379 260 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 379 214 metro 500;
+#X msg 379 173 1;
+#X obj 430 172 /;
+#X connect 2 0 3 0;
+#X connect 3 0 17 0;
+#X connect 6 0 11 0;
+#X connect 6 0 2 0;
+#X connect 7 0 17 1;
+#X connect 11 0 7 0;
+#X connect 13 0 15 0;
+#X connect 15 0 14 0;
+#X connect 16 0 15 0;
+#X connect 17 0 15 1;
+#X coords 0 -1 1 1 85 60 1 100 100;
